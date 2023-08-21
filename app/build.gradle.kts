@@ -11,11 +11,11 @@ android {
 
     compileSdk = 33
     defaultConfig {
-        applicationId = "com.jeluchu.wastickersonline"
+        applicationId = "com.link_statu.stickers"
         minSdk = 22
         targetSdk = 33
         versionCode = 1
-        versionName = "2.0.1"
+        versionName = "1.0"
         vectorDrawables.useSupportLibrary = true
         contentProviderAuthority = "$applicationId.provider.StickerContentProvider"
         manifestPlaceholders["contentProviderAuthority"] = contentProviderAuthority
@@ -91,5 +91,7 @@ dependencies {
     // MULTIMEDIA ----------------------------------------------------------------------------------
     implementation("io.coil-kt:coil:2.2.2")
     implementation("io.coil-kt:coil-gif:2.2.2")
+    implementation ("com.onesignal:OneSignal:[4.0.0, 4.99.99]")
+    implementation ("com.google.android.gms:play-services-ads:21.5.0")
 
 }

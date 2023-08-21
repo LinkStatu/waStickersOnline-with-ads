@@ -1,6 +1,20 @@
 <resources>
-    <string name="app_name">WaStickersOnline</string>
-    <string name="tray_image_content_description">Imagen de la bandeja de paquetes de stickers</string>
-    <string name="add_to_whatsapp">Añadir a WhatsApp</string>
-    <string name="details_pack_already_added">Se añadió el paquete de stickers a WhatsApp</string>
+    <string name="app_name">Link Statu Stickers</string>
+    <string name="tray_image_content_description">Tray image of sticker pack</string>
+    <string name="add_to_whatsapp">Add to WhatsApp</string>
+    <string name="add_to_TLG">Add to Telegram</string>
+    <string name="details_pack_already_added">Added sticker pack to WhatsApp</string>
+    <string name="message_error_whatsapp">The sticker pack was not added. If you want to add it, install or update WhatsApp.</string>
+    <string name="message_video_ad">Watch a video ad to add this pack?</string>
+
+    <string name="ONESIGNAL_APP_ID" translatable="false">xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx</string>
+
+    <string name="Admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+
+    <string name="reward_unit_id" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="time_loop_for_interstitial_to_show_in_sec">100</string>
 </resources>

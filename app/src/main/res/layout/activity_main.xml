@@ -3,14 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#FAD093"
     android:orientation="vertical">
+
 
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/white"
+        android:background="#FF8A65"
         app:contentInsetStart="0dp">
+
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -20,9 +23,11 @@
             android:paddingEnd="@dimen/space_16"
             android:paddingBottom="@dimen/space_8">
 
+
             <TextView
                 style="@style/ToolbarTitle"
-                android:text="Stickers"
+                android:text="Stickers Packs"
+                android:textColor="#FFFFFF"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +39,28 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvStickersList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:overScrollMode="never" />
+    <TextView
+        android:id="@+id/errorMessageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:padding="16dp" />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_ad_unit_id" />
+
+
+
+
 
 </LinearLayout>

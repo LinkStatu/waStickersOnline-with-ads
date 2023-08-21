@@ -90,7 +90,7 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <com.jeluchu.wastickersonline.core.utils.AnimatedRecyclerView
+        <com.link_statu.stickers.core.utils.AnimatedRecyclerView
             android:id="@+id/rvStickers"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -114,6 +114,13 @@
             android:alpha="0.1"
             android:background="#000000"
             android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/load_progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </FrameLayout>
 
@@ -146,9 +153,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
+                android:clickable="true"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
-                app:cardBackgroundColor="@color/redCardBackground"
-                app:cardCornerRadius="@dimen/space_16">
+                app:cardBackgroundColor="#009688"
+                app:cardCornerRadius="@dimen/space_16"
+                android:focusable="true">
 
                 <TextView
                     style="@style/StickerPreviewButtonText"
@@ -176,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
-                app:cardBackgroundColor="@color/redCardBackground"
+                app:cardBackgroundColor="#03A9F4"
                 app:cardCornerRadius="@dimen/space_16">
 
                 <TextView
@@ -188,7 +197,7 @@
                     android:clickable="false"
                     android:drawablePadding="8dp"
                     android:focusable="false"
-                    android:text="AÑADIR A TELEGRAM" />
+                    android:text="@string/add_to_TLG" />
 
             </androidx.cardview.widget.CardView>
         </FrameLayout>

@@ -8,6 +8,7 @@ buildscript {
     dependencies {
         classpath("com.android.tools.build:gradle:7.4.1")
         classpath(kotlin("gradle-plugin", version = "1.8.10"))
+        classpath ("gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.14.0")
     }
 }
 
